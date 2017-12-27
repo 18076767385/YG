@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+ "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+ <!-- 员工信息字段配置信息 -->
+ <hibernate-mapping>
+ 	<class name="Mapping.Liuyan" table="stay">
+ 		<!-- id值 -->
+ 		<id name="id" column="id" type="int">
+			<generator class="native">
+			</generator>
+		</id>
+		<!-- 姓名 -->
+		<property name="yi" type="string" >
+			<column name="yi"/>
+		</property>
+		<!-- 性别 -->
+		<property name="liuyan" type="string">
+			<column name="liuyan"/>
+		</property>
+		
+ 	</class>
+ </hibernate-mapping>
